@@ -4,7 +4,7 @@ const app=express();
 const UserRouter=require("./Routes/UserRoutes.js");
 const ProductsRouter=require("./Routes/ProductsRoutes.js");
 
-const dotenv=require('dotenv')
+const dotenv=require('dotenv').config();
 const cors=require('cors');
 
 
