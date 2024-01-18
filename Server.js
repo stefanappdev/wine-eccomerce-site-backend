@@ -8,7 +8,7 @@ const dotenv=require('dotenv')
 const cors=require('cors');
 
 
-mongoose.connect("mongodb+srv://ailifeadvice2:6BWn4dj2lHbvnskD@nodetuts.okywb1x.mongodb.net/highspirits?retryWrites=true&w=majority")
+mongoose.connect(process.env.MONGO_CONNECTION);
 
 
 app.use(cors());
